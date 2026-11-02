@@ -10,6 +10,7 @@ This report is a briefing for a simulated remote SSH cyber attack using the Cowr
 ## Telemetry Log Analysis (JSON)
 **2026-11-02T14:11:28.828799Z:** Established initial access using brute-force authentication against the honeypot via default administrative credentials (`root` / `admin`).
 
+```json
 {
   "eventid": "cowrie.login.success",
   "timestamp": "2026-11-02T14:11:28.828799Z",
@@ -19,6 +20,7 @@ This report is a briefing for a simulated remote SSH cyber attack using the Cowr
   "password": "admin",
   "message": "login attempt [root/admin] succeeded"
 }
+```
 
 ---
 
