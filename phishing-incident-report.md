@@ -21,10 +21,12 @@ The user's credentials have been reset, and the malicious domain, email addresse
 
 ## 2. Incident Timeline
 **2024-04-10 00:00:00+00:00 - 2024-04-10 13:02:47+00:00:** Inbound network event logs shows from attacker IP `18.66.52.227` searching for employee contact information.
+
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/inbound-network-events.png" alt="Screenshot of inbound network event data.">
 
 The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
-`SCREENSHOT`
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/passivens.png" alt="Screenshot of PassiveDNS for malicious IP.">
 
 **2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00:** Attacker launched a multi-target phishing campaign and delivered 13 spearphishing emails originating from `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` to 10 company employees.
 
