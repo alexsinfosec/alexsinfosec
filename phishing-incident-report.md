@@ -26,7 +26,7 @@ The user's credentials have been reset, and the malicious domain, email addresse
 
 The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
-<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/passivens.png" alt="Screenshot of PassiveDNS for malicious IP.">
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/passivedns.png" alt="Screenshot of PassiveDNS for malicious IP.">
 
 **2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00:** Attacker launched a multi-target phishing campaign and delivered 13 spearphishing emails originating from `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` to 10 company employees.
 
