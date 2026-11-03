@@ -1,11 +1,13 @@
 # KC7 Incident Report
 
-- **Ticket Number:** SOC-2026-10492
-- **Assigned Analyst:** A. Santos
-- **Incident Type:** Spearphishing Campaign
-- **Severity Level:** High
-- **Affected Endpoint:** `OQPA-DESKTOP` (IP: `10.10.0.3`)
-- **Affected User:** `dwaudrey`  (VIP/Executive Account)
+<ul>
+    <li>**Ticket Number:** SOC-2026-10492</li>
+    <li>**Assigned Analyst:** A. Santos</li>
+    <li>**Incident Type:** Spearphishing Campaign</li>
+    <li>**Severity Level:** High</li>
+    <li>**Affected Endpoint:** `OQPA-DESKTOP` (IP: `10.10.0.3`)</li>
+    <li>**Affected User:** `dwaudrey`  (VIP/Executive Account)</li>
+</ul>
 
 ---
 
@@ -96,16 +98,22 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 ## 7. Containment & Remediation Actions
 
-- **Identity Protection:** Forced password reset, session termination, and OAuth token revocation for user `dwaudrey`.
-- **Blocking:** Added domain `betterlyrics4u[.]com`, IP `18.66.52.227`, and email senders `ghostwritersanonymous@protonmail.com` / `wemakebeatz@gmail.com` to to security blocklists.
-- **Tenant Egress:** Purged remaining phishing emails from all internal mailboxes.
+<ul>
+    <li>**Identity Protection:** Forced password reset, session termination, and OAuth token revocation for user `dwaudrey`.</li>
+    <li>**Blocking:** Added domain `betterlyrics4u[.]com`, IP `18.66.52.227`, and email senders `ghostwritersanonymous@protonmail.com` / `wemakebeatz@gmail.com` to to security blocklists.</li>
+    <li>**Tenant Egress:** Purged remaining phishing emails from all internal mailboxes.</li>
+</ul>
 
 ---
 
 ## 8. Analyst Verdict & Recommendations
 
-- **Verdict:** **True Positive**
-- **Recommendations:**
-    1. Enforce Multi-Factor Authentication (MFA)
-    2. Conduct targeted phishing awareness training for employees.
-    3. Establish data sanitization rules for company mailboxes.
+<ul>
+    <li>**Verdict:** **True Positive**</li>
+    <li>**Recommendations:**</li>
+        <ol>
+            <li>Enforce Multi-Factor Authentication (MFA)</li>
+            <li>Conduct targeted phishing awareness training for employees.</li>
+            <li>Establish data sanitization rules for company mailboxes.</li>
+        </ol>
+</ul>
