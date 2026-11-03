@@ -1,4 +1,4 @@
-Ticket & Metadata Overview
+# KC7 Incident Report
 
 - **Ticket Number:** SOC-2026-10492
 - **Assigned Analyst:** A. Santos
