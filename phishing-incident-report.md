@@ -28,24 +28,43 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/passivedns.png" alt="Screenshot of PassiveDNS for malicious IP.">
 
+---
+
 **2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00:** Attacker launched a multi-target phishing campaign and delivered 13 spearphishing emails originating from `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` to 10 company employees.
 
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/email-with-domain.png" alt="Screenshot of email activity with malicious domain.">
+
+---
+
 **2024-04-15 11:07:12+00:00:** Spearphishing email delivered to victim `dwakeaudrey@owl-records.com`.
-`SCREENSHOT`
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/victim-email.png" alt="Screenshot of email activity reaching user dwaudrey.">
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/phishing-email.jpeg" alt="Screenshot of phishing email.">
+
+---
 
 **2024-04-15 12:03:12+00:00** — User `dwaudrey` (IP `10.10.0.5`)clicked the phishing link and visited the malicious URL, which opened browser-based credential harvesting tool disguised as a fake login page
-`SCREENSHOT`
-`SCREENSHOT`
-`SCREENSHOT`
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/victim-user-action.png" alt="Screenshot of user GET request on malicious link.">
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/phishing-page.jpeg" alt="Screenshot of user GET request on malicious link.">
+
+---
 
 **2024-04-15 13:03:12+00:00** — Successful login attempt to user's mail server from attacker IP.
-`SCREENSHOT`
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/attacker-login.png" alt="Screenshot of attacker logging into webmail.">
+
+---
 
 **2024-04-16 09:49:32+00:00** — Attacker queries keywords including `scandal`, `confidential`, `leak`, `secret`, `sensitive` in the user's webmail.
-`SCREENSHOT`
+
+---
 
 **2024-04-30 14:23:02+00:00** — Attacker accessed the `Drafts` folder in the user's webmail and downloaded file `DwakesDirtySecrets.zip` .
-`SCREENSHOT`
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/attacker-email-discovery.png" alt="Screenshot of attacker scanning victim mail and exfiltrating data.">
 
 ---
 
