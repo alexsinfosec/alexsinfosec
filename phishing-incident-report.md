@@ -81,9 +81,9 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 | Tactic               | Technique                                                        | Observed Activity                                                                               |
 | -------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Reconnaissance       | T1594 (Search Victim-Owned Websites)                             | Searched company's website for user `dwaudrey`'s contact details.                               |
-| Resource Development | T1608.004 (Stage Capabilities: Link Target)                      | Hosted fake credential-harvesting web portal with domain `betterlyrics4u.com`.                  |
-| Initial Access       | T1566.002 (Phishing: Spearphishing Link - Credential Harvesting) | Delivered malicious link via `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` |
+| Reconnaissance (T1594)       | Search Victim-Owned Websites                             | Searched company's website for user `dwaudrey`'s contact details.                               |
+| Resource Development (T1608.004) | Stage Capabilities: Link Target                      | Hosted fake credential-harvesting web portal with domain `betterlyrics4u.com`.                  |
+| Initial Access (T1566.002)       | Phishing: Spearphishing Link - Credential Harvesting | Delivered malicious link via `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` |
 | Execution            | T1204.001 (User Execution: Malicious Link)                       | User `dwaudrey` clicked the embedded link in the email.                                         |
 | Credential Access    | T1056.003 (Input Capture: Web Portal Capture)                    | Harvested user credentials using web portal from Resource development.                          |
 | Stealth              | T1078.004 (Valid Accounts: Cloud Accounts)                       | Logged into user `dwaudrey`'s webmail using the harvested credentials.                          |
