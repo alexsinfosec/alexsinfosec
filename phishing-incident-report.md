@@ -30,13 +30,13 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 ---
 
-**2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00:** Attacker launched a multi-target phishing campaign and delivered 13 spearphishing emails originating from `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` to 10 company employees.
+**2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00** – Attacker launched a multi-target phishing campaign and delivered 13 spearphishing emails originating from `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` to 10 company employees.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/email-with-domain.png" alt="Screenshot of email activity with malicious domain.">
 
 ---
 
-**2024-04-15 11:07:12+00:00:** Spearphishing email delivered to victim `dwakeaudrey@owl-records.com`.
+**2024-04-15 11:07:12+00:00** – Spearphishing email delivered to victim `dwakeaudrey@owl-records.com`.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/victim-email.png" alt="Screenshot of email activity reaching user dwaudrey.">
 
