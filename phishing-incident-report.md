@@ -20,7 +20,7 @@ The user's credentials have been reset, and the malicious domain, email addresse
 ---
 
 ## 2. Incident Timeline
-**2024-04-10 00:00:00+00:00 - 2024-04-10 13:02:47+00:00:** Inbound network event logs shows from attacker IP `18.66.52.227` searching for employee contact information.
+**2024-04-10 00:00:00+00:00 - 2024-04-10 13:02:47+00:00** – Inbound network event logs shows from attacker IP `18.66.52.227` searching for employee contact information.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/inbound-network-events.png" alt="Screenshot of inbound network event data.">
 
