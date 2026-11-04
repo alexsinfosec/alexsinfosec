@@ -1,5 +1,5 @@
 # Cowrie Honeypot Telemetry Report
-This is a report for a simulated remote SSH cyber attack using the Cowrie open-source honeypot. It captures initial access, privilege and system reconnaissance, and attempted payload retrieval. The "malicious payload" used for this exercise is the [EICAR Anti-Virus Test File](https://www.eicar.org/download-anti-malware-testfile/).
+This is a report for a simulated remote SSH cyberattack using the Cowrie open-source honeypot. It captures initial access, privilege and system reconnaissance, and attempted payload retrieval. The "malicious payload" used for this exercise is the [EICAR Anti-Virus Test File](https://www.eicar.org/download-anti-malware-testfile/).
 ## Overview
 - **Host System:** macOS (Apple Silicon)
 - **Virtualization:** Docker Desktop for Mac (Apple Silicon GUI Build)
