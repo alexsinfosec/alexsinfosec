@@ -1,5 +1,5 @@
 # Cowrie Honeypot Telemetry Report
-This report is a briefing for a simulated remote SSH cyber attack using the Cowrie open-source honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The "malicious payload" used for this exercise is the [EICAR Anti-Virus Test File](https://www.eicar.org/download-anti-malware-testfile/).
+This is a report for a simulated remote SSH cyber attack using the Cowrie open-source honeypot. It captures initial access, privilege and system reconnaissance, and attempted payload retrieval. The "malicious payload" used for this exercise is the [EICAR Anti-Virus Test File](https://www.eicar.org/download-anti-malware-testfile/).
 ## Overview
 - **Host System:** macOS (Apple Silicon)
 - **Virtualization:** Docker Desktop for Mac (Apple Silicon GUI Build)
@@ -26,6 +26,7 @@ This report is a briefing for a simulated remote SSH cyber attack using the Cowr
 
 **2026-11-02T14:11:57.823206Z:** Verified user privilege context using `whoami`; result: `root`. 
 
+```json
 {
   "eventid": "cowrie.command.input",
   "timestamp": "2026-11-02T14:11:57.823206Z",
@@ -34,11 +35,13 @@ This report is a briefing for a simulated remote SSH cyber attack using the Cowr
   "input": "whoami",
   "message": "CMD: whoami"
 }
+```
 
 ___
 
 **2026-11-02T14:12:46.217949Z:** Queried CPU specifications (`lscpu`) to establish hardware context before staging the payload.
 
+```json
 {
   "eventid": "cowrie.command.input",
   "timestamp": "2026-11-02T14:12:46.217949Z",
@@ -46,11 +49,13 @@ ___
   "input": "lscpu",
   "message": "CMD: lscpu"
 }
+```
 
 ___
 
 **2026-11-02T14:13:26.903818Z:** Staging attempt using `wget` to download malicious payload from eicar[.]org. The transmission was intercepted with SHA-256 file hash d56b1efdb7de08e511c244efa6a3d70ce8bd7f6aab58cad3210571307771017e.
 
+```json
 {
   "eventid": "cowrie.session.file_download",
   "timestamp": "2026-11-02T14:13:26.903818Z",
@@ -58,6 +63,8 @@ ___
   "shasum": "d56b1efdb7de08e511c244efa6a3d70ce8bd7f6aab58cad3210571307771017e",
   "message": "Downloaded URL (http://eicar.org) with SHA-256 d56b1efdb7de08e511c244efa6a3d70ce8bd7f6aab58cad3210571307771017e"
 }
+```
+
 ## MITRE ATT&CK® Mapping
 
 | Tactic              | Technique                                  | Observed Activity                                               |
@@ -91,4 +98,4 @@ To recreate the activity in this sample report in a macOS environment:
     `docker stop cowrie_honeypot`  
     `docker rm cowrie_honeypot`
 
-A cowrie.json file should appear in your Documents folder, which you can open in VS Code or other text editors.
+Cowrie_Logs should appear in your Documents folder, which you can open in VS Code or other text editors.
