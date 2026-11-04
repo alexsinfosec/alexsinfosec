@@ -89,7 +89,7 @@ To recreate the activity in this sample report in a macOS environment:
     `docker run -d --name cowrie_honeypot -p 2222:2222/tcp cowrie/cowrie:latest`  
     You should see cowrie-honeypot in the Containers tab in Docker’s interface. Optionally, you can replace “latest” with a specific version you want to test.
 	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/terminal-docker-cowrie.png" alt="Command to spin up Cowrie in Docker.">
-5. Open a new Terminal window. Run this command to SSH into the Cowrie honeypot (then enter a commaon password, like admin, root, 12345):  
+5. Open a new Terminal window. Run this command to SSH into the Cowrie honeypot (then enter a common password, like admin, root, 12345):  
     `ssh root@127.0.0.1 -p 2222`
 	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/ssh-cowrie.png" alt="Command SSH into Cowrie.">
 6. Execute command sequence (e.g., `whoami`).
