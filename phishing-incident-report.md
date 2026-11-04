@@ -88,8 +88,8 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 | Credential Access    | Input Capture: Web Portal Capture (T1056.003)                    | Harvested user credentials using web portal from Resource development.                          |
 | Stealth              | Valid Accounts: Cloud Accounts (T1078.004)                       | Logged into user `dwaudrey`'s webmail using the harvested credentials.                          |
 | Discovery            | File and Directory Discovery (T1083)                             | Located and opened the Drafts mail folder.                                                      |
-| Collection           | T1114.002 (Email Collection: Remote Email Collection)            | Executed targeted search queries `scandal`, `secret`, `leak` in the user's Drafts folder.       |
-| Exfiltration         | T1041 (Exfiltration Over C2)                                     | Downloaded zip file via HTTP GET request (Status 200) over established web session.             |
+| Collection           | Email Collection: Remote Email Collection (T1114.002)            | Executed targeted search queries `scandal`, `secret`, `leak` in the user's Drafts folder.       |
+| Exfiltration         | Exfiltration Over C2 (T1041)                                     | Downloaded zip file via HTTP GET request (Status 200) over established web session.             |
 
 
 ---
