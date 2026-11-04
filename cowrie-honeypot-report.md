@@ -93,9 +93,9 @@ To recreate the activity in this sample report in a macOS environment:
     `ssh root@127.0.0.1 -p 2222`
 	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/ssh-cowrie.png" alt="Command SSH into Cowrie.">
 6. Execute command sequence (e.g., `whoami`).
-<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/whoami-cowrie.png" alt="whoami command in Cowrie.">
+	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/whoami-cowrie.png" alt="whoami command in Cowrie.">
 7. Run the `exit` command to end the session.
-<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/exit-cowrie.png" alt="Command to exit the Cowrie session.">
+	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/exit-cowrie.png" alt="Command to exit the Cowrie session.">
 8. Save Cowrie’s JSON logs to your Documents folder. In the **original** Terminal window (where you spun up the Cowrie instance), run:  
     `docker cp cowrie_honeypot:/cowrie/cowrie-git/var/log/cowrie/cowrie.json ~/Documents/Cowrie_Logs`
 	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/cowrie-json-logs.png" alt="Command to extract Cowrie logs to the Documents folder.">
