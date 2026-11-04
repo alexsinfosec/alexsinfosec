@@ -83,18 +83,19 @@ To recreate the activity in this sample report in a macOS environment:
 
 1. Download and install Docker Desktop. If you have brew you can use the following Terminal command:  
     `brew install —cask docker`
-2. Run Docker.
-3. Open Terminal. Run this command to fetch the latest Cowrie image via Docker and map it to port 2222:  
+   <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/docker-website.png" alt="Docker app downloads page.">
+3. Run Docker.
+4. Open Terminal. Run this command to fetch the latest Cowrie image via Docker and map it to port 2222:  
     `docker run -d --name cowrie_honeypot -p 2222:2222/tcp cowrie/cowrie:latest`  
     You should see cowrie-honeypot in the Containers tab in Docker’s interface. Optionally, you can replace “latest” with a specific version you want to test.
-4. Open a new Terminal window. Run this command to SSH into the Cowrie honeypot:  
+5. Open a new Terminal window. Run this command to SSH into the Cowrie honeypot:  
     `ssh root@127.0.0.1 -p 2222`
 	Enter a common password (e.g., admin, root, 12345).
-5. Execute command sequence (e.g., `whoami`).
-6. Run the `exit` command to end the session.
-7. Save Cowrie’s JSON logs to your Documents folder. In the **original** Terminal window (where you spun up the Cowrie instance), run:  
+6. Execute command sequence (e.g., `whoami`).
+7. Run the `exit` command to end the session.
+8. Save Cowrie’s JSON logs to your Documents folder. In the **original** Terminal window (where you spun up the Cowrie instance), run:  
     `docker cp cowrie_honeypot:/cowrie/cowrie-git/var/log/cowrie/cowrie.json ~/Documents/Cowrie_Logs`
-8. Stop and remove the container using the following commands:  
+9. Stop and remove the container using the following commands:  
     `docker stop cowrie_honeypot`  
     `docker rm cowrie_honeypot`
 
