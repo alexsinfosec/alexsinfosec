@@ -20,7 +20,7 @@ The user's credentials have been reset, and the malicious domain, email addresse
 ---
 
 ## 2. Incident Timeline
-**2024-04-10 00:00:00+00:00 - 2024-04-10 13:02:47+00:00** – Inbound network event logs shows from attacker IP `18.66.52.227` searching for employee contact information.
+**2024-04-10 00:00:00+00:00 - 2024-04-10 13:02:47+00:00** – Inbound network event logs shows attacker IP `18.66.52.227` searching for employee contact information.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/inbound-network-events.png" alt="Screenshot of inbound network event data.">
 
@@ -44,7 +44,7 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 ---
 
-**2024-04-15 12:03:12+00:00** — User `dwaudrey` (IP `10.10.0.5`)clicked the phishing link and visited the malicious URL, which opened browser-based credential harvesting tool disguised as a fake login page
+**2024-04-15 12:03:12+00:00** — User `dwaudrey` (IP `10.10.0.5`)clicked the phishing link and visited the malicious URL, which opened a browser-based credential harvesting tool disguised as a fake login page.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/victim-user-action.png" alt="Screenshot of user GET request on malicious link.">
 
@@ -58,11 +58,11 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 ---
 
-**2024-04-16 09:49:32+00:00** — Attacker queries keywords including `scandal`, `confidential`, `leak`, `secret`, `sensitive` in the user's webmail.
+**2024-04-16 09:49:32+00:00** — Attacker queries keywords `scandal`, `confidential`, `leak`, `secret`, `sensitive` in the user's webmail.
 
 ---
 
-**2024-04-30 14:23:02+00:00** — Attacker accessed the `Drafts` folder in the user's webmail and downloaded file `DwakesDirtySecrets.zip` .
+**2024-04-30 14:23:02+00:00** — Attacker accessed the `Drafts` folder in the user's webmail and downloaded file `DwakesDirtySecrets.zip`.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/attacker-email-discovery.png" alt="Screenshot of attacker scanning victim mail and exfiltrating data.">
 
