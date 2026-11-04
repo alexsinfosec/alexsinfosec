@@ -4,7 +4,7 @@
 - **Assigned Analyst:** A. Santos
 - **Incident Type:** Spearphishing Campaign
 - **Severity Level:** High
-- **Affected Endpoint:** `OQPA-DESKTOP` (IP: `10.10.0.3`)
+- **Affected Endpoint:** `OQPA-DESKTOP` (IP: `10.10.0.5`)
 - **Affected User:** `dwaudrey`  (VIP/Executive Account)
 
 ---
