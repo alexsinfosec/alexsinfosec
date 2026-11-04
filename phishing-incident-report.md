@@ -81,13 +81,13 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 | Tactic               | Technique                                                        | Observed Activity                                                                               |
 | -------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Reconnaissance (T1594)       | Search Victim-Owned Websites                             | Searched company's website for user `dwaudrey`'s contact details.                               |
-| Resource Development (T1608.004) | Stage Capabilities: Link Target                      | Hosted fake credential-harvesting web portal with domain `betterlyrics4u.com`.                  |
-| Initial Access (T1566.002)       | Phishing: Spearphishing Link - Credential Harvesting | Delivered malicious link via `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` |
-| Execution            | T1204.001 (User Execution: Malicious Link)                       | User `dwaudrey` clicked the embedded link in the email.                                         |
-| Credential Access    | T1056.003 (Input Capture: Web Portal Capture)                    | Harvested user credentials using web portal from Resource development.                          |
-| Stealth              | T1078.004 (Valid Accounts: Cloud Accounts)                       | Logged into user `dwaudrey`'s webmail using the harvested credentials.                          |
-| Discovery            | T1083 (File and Directory Discovery)                             | Located and opened the Drafts mail folder.                                                      |
+| Reconnaissance       | Search Victim-Owned Websites (T1594)                             | Searched company's website for user `dwaudrey`'s contact details.                               |
+| Resource Development | Stage Capabilities: Link Target (T1608.004)                      | Hosted fake credential-harvesting web portal with domain `betterlyrics4u.com`.                  |
+| Initial Access       | Phishing: Spearphishing Link - Credential Harvesting (T1566.002) | Delivered malicious link via `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` |
+| Execution            | User Execution: Malicious Link (T1204.001)                       | User `dwaudrey` clicked the embedded link in the email.                                         |
+| Credential Access    | Input Capture: Web Portal Capture (T1056.003)                    | Harvested user credentials using web portal from Resource development.                          |
+| Stealth              | Valid Accounts: Cloud Accounts (T1078.004)                       | Logged into user `dwaudrey`'s webmail using the harvested credentials.                          |
+| Discovery            | File and Directory Discovery (T1083)                             | Located and opened the Drafts mail folder.                                                      |
 | Collection           | T1114.002 (Email Collection: Remote Email Collection)            | Executed targeted search queries `scandal`, `secret`, `leak` in the user's Drafts folder.       |
 | Exfiltration         | T1041 (Exfiltration Over C2)                                     | Downloaded zip file via HTTP GET request (Status 200) over established web session.             |
 
