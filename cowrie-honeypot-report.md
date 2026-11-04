@@ -88,15 +88,21 @@ To recreate the activity in this sample report in a macOS environment:
 4. Open Terminal. Run this command to fetch the latest Cowrie image via Docker and map it to port 2222:  
     `docker run -d --name cowrie_honeypot -p 2222:2222/tcp cowrie/cowrie:latest`  
     You should see cowrie-honeypot in the Containers tab in Docker’s interface. Optionally, you can replace “latest” with a specific version you want to test.
+	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/terminal-docker-cowrie.png" alt="Command to spin up Cowrie in Docker.">
 5. Open a new Terminal window. Run this command to SSH into the Cowrie honeypot:  
     `ssh root@127.0.0.1 -p 2222`
 	Enter a common password (e.g., admin, root, 12345).
+	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/ssh-cowrie.png" alt="Command SSH into Cowrie.">
 6. Execute command sequence (e.g., `whoami`).
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/whoami-cowrie.png" alt="whoami command in Cowrie.">
 7. Run the `exit` command to end the session.
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/exit-cowrie.png" alt="Command to exit the Cowrie session.">
 8. Save Cowrie’s JSON logs to your Documents folder. In the **original** Terminal window (where you spun up the Cowrie instance), run:  
     `docker cp cowrie_honeypot:/cowrie/cowrie-git/var/log/cowrie/cowrie.json ~/Documents/Cowrie_Logs`
+	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/cowrie-json-logs.png" alt="Command to extract Cowrie logs to the Documents folder.">
 9. Stop and remove the container using the following commands:  
     `docker stop cowrie_honeypot`  
     `docker rm cowrie_honeypot`
+	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/remove-cowrie-container.png" alt="Command to remove the Cowrie Docker container.">
 
 Cowrie_Logs should appear in your Documents folder, which you can open in VS Code or other text editors.
