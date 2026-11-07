@@ -86,8 +86,8 @@ To recreate the activity in this sample report in a macOS environment:
    <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/docker-website.png" alt="Docker app downloads page.">
 3. Run Docker.
 4. Open Terminal. Run this command to fetch the latest Cowrie image via Docker and map it to port 2222:  
-    `docker run -d --name cowrie_honeypot -p 2222:2222/tcp cowrie/cowrie:latest`  
-    You should see cowrie-honeypot in the Containers tab in Docker’s interface. Optionally, you can replace “latest” with a specific version you want to test.
+    `docker run -d --name cowrie_honeypot -p 127.0.0.1:2222:2222 cowrie/cowrie:latest`  
+    You should see cowrie-honeypot in the Containers tab in Docker’s interface. Optionally, you can replace “latest” with a specific version you want to test, and you can omit `127.0.0.1` if you're on a SECURE network.
 	<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/terminal-docker-cowrie.png" alt="Command to spin up Cowrie in Docker.">
 5. Open a new Terminal window. Run this command to SSH into the Cowrie honeypot (then enter a common password, like admin, root, 12345):  
     `ssh root@127.0.0.1 -p 2222`
