@@ -81,9 +81,14 @@ ___
 ## Environment Setup and Deployment (MacOS)
 To recreate the activity in this sample report in a macOS environment:
 
-1. Download and install Docker Desktop. If you have brew you can use the following Terminal command:  
-    `brew install —cask docker`
-   <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/docker-website.png" alt="Docker app downloads page.">
+```zsh
+\(docker pull cowrie/cowrie:latest\) docker run -d -p 2222:2222 --name my-cowrie cowrie/cowrie:latest
+```
+
+1. Download and install Docker Desktop. If you have brew you can use the following Terminal command:
+```zsh
+brew install —cask docker
+```
 3. Run Docker.
 4. Open Terminal. Run this command to fetch the latest Cowrie image via Docker and map it to port 2222:  
     `docker run -d --name cowrie_honeypot -p 127.0.0.1:2222:2222 cowrie/cowrie:latest`  
