@@ -81,10 +81,6 @@ ___
 ## Environment Setup and Deployment (MacOS)
 To recreate the activity in this sample report in a macOS environment:
 
-```zsh
-\(docker pull cowrie/cowrie:latest\) docker run -d -p 2222:2222 --name my-cowrie cowrie/cowrie:latest
-```
-
 1. Download and install Docker Desktop. If you have brew you can use the following Terminal command:
 ```zsh
 brew install —cask docker
