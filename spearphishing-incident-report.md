@@ -1,4 +1,5 @@
 # KC7 Spearphishing Incident Report
+This is a report for a simulated spearphishing campaign on the KC7 Cyber platform, which is built on top of Azure Data Explorer, which I repurposed as a sandbox to simulate a full end-to-end investigation.
 
 - **Ticket Number:** SOC-2026-10492
 - **Assigned Analyst:** A. Santos
@@ -30,7 +31,7 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 ---
 
-**2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00** – Attacker launched a multi-target spearphishing campaign and delivered 13  emails originating from `ghostwritersanonymous@protonmail.com` and `wemakebeatz@gmail.com` to 10 company employees.
+**2024-04-15 11:07:12+00:00 - 2024-04-15 11:07:12+00:00** – Attacker launched a multi-target spearphishing campaign and delivered 13  emails originating from `ghostwritersanonymous@protonmail[.]com` and `wemakebeatz@gmail[.]com` to 10 company employees.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_phishing/email-with-domain.png" alt="Screenshot of email activity with malicious domain.">
 
@@ -72,8 +73,8 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 
 - **Malicious Domain:** `betterlyrics4u[.]com`
 - **C2 IPv4 Address** `18.66.52.227`
-- **Sender Email:** `ghostwritersanonymous@protonmail.com`
-- **Sender Email:** `wemakebeatz@gmail.com`
+- **Sender Email:** `ghostwritersanonymous@protonmail[.]com`
+- **Sender Email:** `wemakebeatz@gmail[.]com`
 
 ---
 
@@ -97,7 +98,7 @@ The IP mapped to domain `betterlyrics4u[.]com` via PassiveDNS.
 ## 7. Containment & Remediation Actions
 
 - **Identity Protection:** Forced password reset, session termination, and OAuth token revocation for user `dwaudrey`.
-- **Blocking:** Added domain `betterlyrics4u[.]com`, IP `18.66.52.227`, and email senders `ghostwritersanonymous@protonmail.com` / `wemakebeatz@gmail.com` to to security blocklists.
+- **Blocking:** Added domain `betterlyrics4u[.]com`, IP `18.66.52.227`, and email senders `ghostwritersanonymous@protonmail[.]com` / `wemakebeatz@gmail[.]com` to to security blocklists.
 - **Tenant Egress:** Purged remaining phishing emails from all internal mailboxes.
 
 ---
