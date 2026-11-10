@@ -32,7 +32,7 @@ From the YARA alert, checked asset inventory lookup table to verify criticality 
 
 `SCREENSHOT 1`
 ### B. Enrichment
-Enriched Splunk investigation with internal threat intelligence, YARA alert data, and external sources (VirusTotal). YARA rule flags malicious URL and string matches found in the event logs. Internal threat intel validates SHA-256 match and categorizes the attack as `Malware_Staging` and `C2_Infrastructure` by an `External_Threat_Actor`.
+Enriched Splunk investigation with internal threat intelligence, YARA alert data, and external sources (VirusTotal). YARA rule flags malicious URL and string matches found in the event logs. Internal threat intel validates SHA-256 match and categorizes the attack as `Malware_Staging` and `C2_Infrastructure` by an `External_Threat_Actor`. Finally, system logs reveal attacker IP `192.168.65.1`.
 
 `SCREENSHOT 2`
 `SCREENSHOT 3`
@@ -62,6 +62,7 @@ A malware incident on `PROD-WEB-01` is a security perimeter breach. If the attac
 ## 4. Indicators of Compromise (IoCs)
 - **SHA-256:** d56b1efdb7de08e511c244efa6a3d70ce8bd7f6aab58cad3210571307771017e
 - **Malicious Domain:** hxxp://eicar[.]org
+- **Malicious IP:** `192.168.65.1`
 - **Authentication:** `root` : `admin` (Default credential pair)
 - **Fingerprint (HASSH):** 2da464e4fd41314056df309d246a983a 
 - **String:** X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
