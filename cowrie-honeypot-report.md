@@ -2,7 +2,6 @@
 This is a report for a simulated remote SSH cyberattack using a dockerized Cowrie honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The attack logs were ingested into Splunk Cloud for the investigation.
 
 To simulate an enterprise SIEM pipeline, I also generated "threat intel" and "asset inventory" CSV documents that included the payload's IoCs and simulated target systems to enrich search context and serve as Splunk lookup tables. Finally, I used AI to write a mock yara_eicar_detection.json endpoint alert based on Marc Rivero's YARA rule to "trigger" the start of the investigation.
-
 ## Overview
 - **Host System:** macOS (Apple Silicon)
 - **Virtualization:** Docker Desktop for Mac (Apple Silicon GUI Build)
@@ -19,13 +18,10 @@ The malware incident began with a successful brute-force SSH login to `PROD-WEB-
 
 Priority recommendations include immediate isolation of the compromised system, malware eradication, forced credential reset, and adding the malicious URL and IP to the enterprise firewall. 
 ## 2. Incident Timeline and Triage Summary
-**2026-11-02T14:11:28.828799Z:** Established initial access using brute-force authentication against the `PROD-WEB-01` / `172.17.0.2` via default administrative credentials (`root` / `admin`).
-
-**2026-11-02T14:11:57.823206Z:** Verified user privilege context using `whoami`; result: `root`. 
-
-**2026-11-02T14:12:46.217949Z:** Queried CPU specifications (`lscpu`) to establish hardware context before staging the payload.
-
-**2026-11-02T14:13:26.903818Z:** Staging attempt using `wget` to download malicious payload from hxxp://eicar[.]org. The transmission was intercepted with SHA-256 file hash d56b1efdb7de08e511c244efa6a3d70ce8bd7f6aab58cad3210571307771017e, and triggered the YARA alert for both the URL and matched_string.
+- **2026-11-02T14:11:28.828799Z:** Established initial access using brute-force authentication against the `PROD-WEB-01` / `172.17.0.2` via default administrative credentials (`root` / `admin`).
+- **2026-11-02T14:11:57.823206Z:** Verified user privilege context using `whoami`; result: `root`.
+- **2026-11-02T14:12:46.217949Z:** Queried CPU specifications (`lscpu`) to establish hardware context before staging the payload.
+- **2026-11-02T14:13:26.903818Z:** Staging attempt using `wget` to download malicious payload from hxxp://eicar[.]org. The transmission was intercepted with SHA-256 file hash d56b1efdb7de08e511c244efa6a3d70ce8bd7f6aab58cad3210571307771017e, and triggered the YARA alert for both the URL and matched_string.
 ### A. Triage
 From the YARA alert, checked asset inventory lookup table to verify criticality and environment before escalating. Search results revealed the target as `PROD-WEB-01`, which is the company's security perimeter and has a criticality level of `High`. YARA indicators in the search pipeline further validates the incident's severity as `High`. **Decision: Escalate**.
 
