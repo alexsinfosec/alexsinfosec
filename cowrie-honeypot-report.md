@@ -11,7 +11,7 @@ Finally, I used AI to write a mock yara_eicar_detection.json endpoint alert usin
 - **SIEM:** Splunk Cloud
 - **YARA rule:** [Rule to detect Eicar pattern - Marc Rivero - Yara Rules Project](https://github.com/Yara-Rules/rules/blob/master/malware/MALW_Eicar.yar)
 - **Payload:** [EICAR Anti-Virus Test File](https://www.eicar.org/download-anti-malware-testfile/)
-- **Target:** `PROD-WEB-01` / `172.17.0.2`
+- **Target:** `PROD-WEB-01` / `172.17.0.2` (honeypot)
 - **Generated assets:** Cowrie_Logs.json, yara_eicar_detection.json, threat_intel.csv, asset_inventory.csv
 ## 1. Executive Summary
 On November 2, 2026 at 14:11:28 UTC, a threat actor staged Command-and-Control malware on system `PROD-WEB-01` after establishing remote SSH access and performing user privilege and system reconnaissance.
