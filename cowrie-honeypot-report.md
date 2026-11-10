@@ -1,5 +1,5 @@
 # Cowrie Honeypot DFIR Report (Splunk, YARA)
-This is a report for a simulated remote SSH cyberattack using the Cowrie honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The attack logs were ingested into Splunk Cloud for the investigation.
+This is a report for a simulated remote SSH cyberattack using a Dockerized Cowrie honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The attack logs were ingested into Splunk Cloud for the investigation.
 
 To simulate an enterprise SIEM pipeline, I also generated "threat intel" and "asset inventory" CSV documents that included the payload's IoCs and simulated target systems to enrich search context and serve as Splunk lookup tables. 
 
@@ -86,7 +86,7 @@ rule eicar
 
 - **Verdict:** **True Positive**
 - **Recommendations:**
-    - **Isolate Target:** Immediately isolated `PROD-WEB-01` from internal network to halt potential lateral movement.
+    - **Isolate Target:** Immediately isolate `PROD-WEB-01` from internal network to halt potential lateral movement.
     - **Eradicate Payload:** Remove the staged payload file and clear temporary download directories.
     - **Credential Reset:** Forced credential reset for `PROD-WEB-01` and audit all environment assets for default credentials. 
     - **Perimeter Blocklist:** Add IP `192.168.65.1` and URL hxxp://eicar[.]org to firewall blocklist.
