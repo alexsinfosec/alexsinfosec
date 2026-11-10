@@ -1,9 +1,8 @@
 # Cowrie Honeypot DFIR Report (Splunk, YARA)
 This is a report for a simulated remote SSH cyberattack using a dockerized Cowrie honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The attack logs were ingested into Splunk Cloud for the investigation.
 
-To simulate an enterprise SIEM pipeline, I also generated "threat intel" and "asset inventory" CSV documents that included the payload's IoCs and simulated target systems to enrich search context and serve as Splunk lookup tables. 
+To simulate an enterprise SIEM pipeline, I also generated "threat intel" and "asset inventory" CSV documents that included the payload's IoCs and simulated target systems to enrich search context and serve as Splunk lookup tables. Finally, I used AI to write a mock yara_eicar_detection.json endpoint alert based on Marc Rivero's YARA rule to "trigger" the start of the investigation.
 
-Finally, I used AI to write a mock yara_eicar_detection.json endpoint alert based on Marc Rivero's YARA rule, as well as using the other assets as references to "trigger" the start of the investigation.
 ## Overview
 - **Host System:** macOS (Apple Silicon)
 - **Virtualization:** Docker Desktop for Mac (Apple Silicon GUI Build)
