@@ -1,5 +1,5 @@
 # Cowrie Honeypot DFIR Report (Splunk, YARA)
-This is a report for a simulated remote SSH cyberattack using a Dockerized Cowrie honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The attack logs were ingested into Splunk Cloud for the investigation.
+This is a report for a simulated remote SSH cyberattack using a dockerized Cowrie honeypot, from initial access, to privilege and system reconnaissance, to attempted payload retrieval. The attack logs were ingested into Splunk Cloud for the investigation.
 
 To simulate an enterprise SIEM pipeline, I also generated "threat intel" and "asset inventory" CSV documents that included the payload's IoCs and simulated target systems to enrich search context and serve as Splunk lookup tables. 
 
