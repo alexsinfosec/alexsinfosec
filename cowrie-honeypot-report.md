@@ -31,12 +31,16 @@ Priority recommendations include immediate isolation of the compromised system, 
 From the YARA alert, checked asset inventory lookup table to verify criticality and environment before escalating. Search results revealed the target as `PROD-WEB-01`, which is the company's security perimeter and has a criticality level of `High`. YARA indicators in the search pipeline further validates the incident's severity as `High`. **Decision: Escalate**.
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/1-asset-check.png" alt="Splunk asset search pipeline screenshot.">
+
 ### B. Enrichment
 Enriched Splunk investigation with internal threat intelligence, YARA alert data, and external sources (VirusTotal). YARA rule flags malicious URL and string matches found in the event logs. Internal threat intel validates SHA-256 match and categorizes the attack as `Malware_Staging` and `C2_Infrastructure` by an `External_Threat_Actor`. Finally, system logs reveal attacker IP `192.168.65.1`.
 
-`SCREENSHOT 2`
-`SCREENSHOT 3`
-`SCREENSHOT 3.5`
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/2-ti-check.png" alt="Splunk intel and alert data search pipeline screenshot.">
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/3-ti-check-b.png" alt="Splunk intel and alert data search pipeline screenshot.">
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/virustotal-eicar.png" alt="Screenshot of VirusTotal page for the EICAR payload.">
+
 ### C. Correlation
 Reconstructed the attack timeline with the newly evaluated data from Triage and Enrichment. By isolating events related to IP `192.168.65.1`, normalizing time across datasets, and sorting results, the full kill chain is revealed.
 
