@@ -48,8 +48,11 @@ From 2026-11-02 14:11:11 to 2026-11-02 14:13:50, the attacker:
 - Established a remote SSH connection to `PROD-WEB-01` via brute-force login (`root` / `admin`)
 - Executed `whoami`, `lscpu` to reconnaissance user privileges and system architecture
 - Used `wget` to attempt payload retrieval from hxxp://eicar[.]org onto `PROD-WEB-01`
-`SCREENSHOT 4`
-`SCREENSHOT 5`
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/4-timeline.png" alt="Splunk IP events timeline search pipeline screenshot.">
+
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/5-timeline-b.png" alt="Splunk IP events timeline search pipeline screenshot.">
+
 ### D. Prioritization
 - **Incident type:** Malware
 - **Priority:** High (P2)
