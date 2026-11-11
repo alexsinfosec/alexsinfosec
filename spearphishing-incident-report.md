@@ -1,5 +1,5 @@
 # KC7 Spearphishing Incident Report
-This is a report for a simulated spearphishing campaign on the KC7 Cyber platform, which is built on top of Azure Data Explorer, which I repurposed as a sandbox to simulate a full end-to-end investigation.
+This is a report for a simulated spearphishing campaign on the KC7 Cyber platform, which is built on top of Azure Data Explorer, that I repurposed as a sandbox to simulate a full end-to-end investigation.
 
 - **Ticket Number:** SOC-2026-10492
 - **Assigned Analyst:** A. Santos
