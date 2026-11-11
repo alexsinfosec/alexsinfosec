@@ -1,4 +1,4 @@
-# Alex S | Cybersecurity Analyst & Writer
+# Alex S | Cybersecurity Analyst & Technical Writer
 
 **Portfolio:**
 
