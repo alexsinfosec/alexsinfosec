@@ -30,6 +30,8 @@ From the YARA alert, checked asset inventory lookup table to verify criticality 
 ### B. Enrichment
 Enriched Splunk investigation with internal threat intelligence, YARA alert data, and external sources (VirusTotal). YARA rule flags malicious URL and string matches found in the event logs. Internal threat intel validates SHA-256 match and categorizes the attack as `Malware_Staging` and `C2_Infrastructure` by an `External_Threat_Actor`. Finally, system logs reveal attacker IP `192.168.65.1`.
 
+<img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/2-ti-check-a.png" alt="Splunk intel and alert data search pipeline screenshot.">
+
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/3-ti-check-b.png" alt="Splunk intel and alert data search pipeline screenshot.">
 
 <img src="https://github.com/alexsinfosec/alexsinfosec/blob/main/assets/assets_cowrie/virustotal-eicar.png" alt="Screenshot of VirusTotal page for the EICAR payload.">
