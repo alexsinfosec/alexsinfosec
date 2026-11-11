@@ -14,7 +14,7 @@ To simulate an enterprise SIEM pipeline, I also generated "threat intel" and "as
 ## 1. Executive Summary
 On November 2, 2026 at 14:11:28 UTC, a threat actor staged Command-and-Control malware on system `PROD-WEB-01` after establishing remote SSH access and performing user privilege and system reconnaissance.
 
-The malware incident began with a successful brute-force SSH login to `PROD-WEB-01`. Upon establishing initial access, the attacker verified root access and validated the system's architecture. By 14:13:26 UTC (just under 2 minutes after initial access), the attacker successfully downloaded the C2 payload to `PROD-WEB-01`.
+The malware incident began with a successful brute-force SSH login to `PROD-WEB-01`. Upon establishing initial access, the attacker verified root access and validated the system's architecture. By 14:13:26 UTC, the attacker successfully downloaded the C2 payload to `PROD-WEB-01`.
 
 Priority recommendations include immediate isolation of the compromised system, malware eradication, forced credential reset, and adding the malicious URL and IP to the enterprise firewall. 
 ## 2. Incident Timeline and Triage Summary
