@@ -1,8 +1,6 @@
 # KC7 Spearphishing Incident Report
-This is a report for a simulated spearphishing campaign on the KC7 Cyber platform, which is built on top of Azure Data Explorer, that I repurposed as a sandbox to simulate a full end-to-end investigation.
+An end-to-end threat hunt and DFIR report built on Azure Data Explorer (via KC7 Cyber). Rather than stopping at the platform's guided prompts, I queried the raw spearphishing telemetry using KQL to reconstruct the complete kill chain and covered initial triage, MITRE ATT&CK® TTP mapping, IoC extraction, and executive risk reporting.
 
-- **Ticket Number:** SOC-2026-10492
-- **Assigned Analyst:** A. Santos
 - **Incident Type:** Spearphishing Campaign
 - **Severity Level:** High
 - **Affected Endpoint:** `OQPA-DESKTOP` (IP: `10.10.0.5`)
